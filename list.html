@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Lists</title>
+    <meta name="description" content="It contains the lists as defined in the assignment booklet. It contains ordered, unordered, and nested lists with the required attributes.">
+    <meta name="author" content="Jai Kumar">
+    <meta name="keywords" content="lists, html lists, ordered lists, unordered lists, nested lists">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento&display=swap">
+    <style>
+        #typea {
+            list-style-type: lower-latin;
+        }
+        #typeaa {
+            list-style-type: upper-latin;
+        }
+        #typei {
+            list-style-type: lower-roman;
+        }
+        #typeii {
+            list-style-type: upper-roman;
+        }
+        #disc {
+            list-style-type: disc;
+        }
+        #circle {
+            list-style-type: circle;
+        }
+        #square {
+            list-style-type: square;
+        }
+        .twhead tr:nth-child(odd) {
+            background-color: #c70039;
+            color: whitesmoke;
+        }
+        caption {
+            font-size: 1.25em;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            color: #b83b5e;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="tables.html">Tables</a>
+        <a class="active" href="list.html">List</a>
+        <a id="contact" href="contact.html">Contact</a>
+    </nav>
+
+    <table class="twhead">
+        <caption>Ordered Lists</caption>
+        <tr>
+            <th>Best Countries to Visit</th>
+            <th>Shows to Watch</th>
+            <th>Movies to Watch</th>
+            <th>Toronto Tourist Attractions</th>
+            <th>5 Largest Buildings in World</th>
+        </tr>
+        <tr>
+            <td>
+                <ol id="type1">
+                    <li>Switzerland</li>
+                    <li>Australia</li>
+                    <li>Japan</li>
+                    <li>France</li>
+                    <li>Spain</li>
+                </ol>
+            </td>
+            <td>
+                <ol id="typea">
+                    <li>Money Heist</li>
+                    <li>Game of Thrones</li>
+                    <li>The Witcher</li>
+                    <li>Hostel Daze</li>
+                </ol>
+            </td>
+            <td>
+                <ol id="typeaa">
+                    <li>Interstellar</li>
+                    <li>Prestige</li>
+                    <li>Harry Potter Series</li>
+                    <li>Chhichhore</li>
+                </ol>
+            </td>
+            <td>
+                <ol id="typei">
+                    <li>CN Tower</li>
+                    <li>Casa Loma</li>
+                    <li>Ripley Aquarium of Canada</li>
+                    <li>Toronto Zoo</li>
+                    <li>Ontario Science Center</li>
+                </ol>
+            </td>
+            <td>
+                <ol id="typeii">
+                    <li>Burj Khalifa</li>
+                    <li>Shanghai Tower</li>
+                    <li>Abraj Al Bait Clock Tower</li>
+                    <li>Ping An Finance Center</li>
+                    <li>Goldin Finance 117</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="twhead">
+        <caption>Unordered Lists</caption>
+        <tr>
+            <th>Shopping List</th>
+            <th>Mobile OS</th>
+            <th>Browsers</th>
+        </tr>
+        <tr>
+            <td>
+                <ul id="disc">
+                    <li>1Kg Sugar</li>
+                    <li>2L Orange Juice</li>
+                    <li>1 Honey Cheerios</li>
+                    <li>5Kg Rice</li>
+                    <li>2 White Bread</li>
+                </ul>
+            </td>
+            <td>
+                <ul id="circle">
+                    <li>Android</li>
+                    <li>iOS</li>
+                    <li>Blackberry OS</li>
+                    <li>Windows Phone</li>
+                    <li>Symbian OS</li>
+                </ul>
+            </td>
+            <td>
+                <ul id="square">
+                    <li>Google Chrome</li>
+                    <li>Mozilla Firefox</li>
+                    <li>Apple Safari</li>
+                    <li>Opera</li>
+                    <li>Microsoft Edge</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table id="table3">
+        <caption>Definition List</caption>
+        <tr>
+            <td>
+                <h3>Networking Devices</h3>
+                <dl>
+                    <dt>Routers</dt>
+                    <dd>A networking device that forwards data packets between computer networks. Routers perform the "traffic directing" functions on the Internet.</dd>
+
+                    <dt>Switches</dt>
+                    <dd>A device that connects devices together on a computer network, by using packet switching to receive,</dd>
+                    <dd> process and forward data to the destination device.</dd>
+
+                    <dt>Hubs</dt>
+                    <dd>For connecting multiple Ethernet devices together and making them act as a single network segment.</dd>
+
+                    <dt>Repeaters</dt>
+                    <dd>An electronic device that receives a signal and retransmits it at a higher level or higher power, or onto the other side of an obstruction,</dd>
+                    <dd> so that the signal can cover longer distances.</dd>
+
+                    <dt>Bridges</dt>
+                    <dd>A device that connects multiple network segments.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table id="table4">
+        <caption>Nested Ordered List</caption>
+        <tr>
+            <td>
+                <h3>List of Animals</h3>
+                <ol>
+                    <li>Birds</li>
+                    <li>Mammals
+                        <ol>
+                            <li>Tiger</li>
+                            <li>Whale</li>
+                        </ol>
+                    </li>
+                    <li>Reptiles</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table id="table5">
+        <caption>Nested Unordered List</caption>
+        <tr>
+            <td>
+                <h3>Beverages</h3>
+                <ul>
+                    <li>Coffe</li>
+                    <li>Tea
+                        <ul>
+                            <li>Black Tea</li>
+                            <li>Green Tea</li>
+                        </ul>
+                    </li>
+                    <li>Milk</li>
+                    <li>Orange Juice</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

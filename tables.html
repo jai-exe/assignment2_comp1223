@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Tables</title>
+    <meta name="description" content="This page contains five tables which display normal tables, and nested tables with the attributes defined in the assignment.">
+    <meta name="author" content="Jai Kumar">
+    <meta name="keywords" content="tables, html tables, html5 tables, nested tables">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento&display=swap">
+    <style>
+
+        #unoccupied {
+            text-align: center;
+        }
+
+        #table2 td, th {
+            border: 1px solid black;
+        }
+
+        .cellalign {
+            text-align: right;
+            vertical-align: top;
+        }
+
+        #rnested {
+            caption-side: bottom;
+        }
+
+        #figtable {
+            border: 1px solid red;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffd369;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff1cf;
+            color: black;
+        }
+
+        .alignment {
+            border: 1px dotted black;
+            width: 150px;
+            height: 75px;
+            text-align: right;
+            vertical-align: bottom;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a class="active" href="tables.html">Tables</a>
+        <a href="list.html">List</a>
+        <a id="contact" href="contact.html">Contact</a>
+    </nav>
+
+    <table>
+        <tr style="background-color: #015668;color: whitesmoke">
+            <th>Attribute</th>
+            <th>Values</th>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>100px</td>
+        </tr>
+        <tr>
+            <td>cellpadding</td>
+            <td>5px</td>
+        </tr>
+        <tr>
+            <td>cellspacing</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>alignment</td>
+            <td>right</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>1px solid black</td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>colorname</td>
+        </tr>
+    </table>
+
+    <table id="table2">
+        <tr style="background-color: #015668;color: whitesmoke">
+            <th>Apartment No.</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Profession</th>
+        </tr>
+        <tr>
+            <td class="cellalign">001</td>
+            <td>Jack Ryan</td>
+            <td>37</td>
+            <td>Teacher</td>
+        </tr>
+        <tr>
+        <td class="cellalign">203</td>
+        <td id="unoccupied" colspan="3">Not Occupied</td>
+        </tr>
+        <tr>
+            <td class="cellalign">502</td>
+            <td>Will Byers</td>
+            <td>25</td>
+            <td rowspan="3">Lawyer</td>
+        </tr>
+        <tr>
+            <td class="cellalign">705</td>
+            <td>Harvey Specter</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td class="cellalign">809</td>
+            <td>Michael Ross</td>
+            <td>42</td>
+        </tr>
+
+    </table>
+
+    <table id="table3">
+        <tr>
+            <td>
+                <table>
+                    <caption id="lnested">Monthly Expenditures</caption>
+                    <tr>
+                        <td>Cassi Newton</td>
+                        <td>$800</td>
+                    </tr>
+                    <tr>
+                        <td>Clark Kent</td>
+                        <td>$1200</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <caption id="rnested">Monthly Income</caption>
+                    <tr>
+                        <td>Cassi Newton</td>
+                        <td>$1600</td>
+                    </tr>
+                    <tr>
+                        <td>Clark Kent</td>
+                        <td>$2000</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Goldberg</td>
+                        <td>$2500</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table id="figtable">
+        <tr>
+            <td>
+                <figure>
+                    <a href="images/gbc_logo.png" target="_blank"><img src="images/gbc_logo-s.png" alt="George Brown College Logo" height="78" width="120"></a>
+                    <figcaption>Jai Kumar(<a href="mailto:jai.kumar@georgebrown.ca">jai.kumar@georgebrown.ca</a>)</figcaption>
+                </figure>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="alignment">COMP1223</td>
+        </tr>
+    </table>
+
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>
